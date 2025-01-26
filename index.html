@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Key Provider</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>API Integration: Seamlessly Adding and Accessing Data</h1>
+    <div class="theme-toggle">
+      <button id="toggle-theme">Switch Theme</button>
+    </div>
+  </header>
+  <main>
+    <section class="apis">
+      <h2>Available APIs</h2>
+      <div id="api-list">
+        <!-- Default APIs and user-added APIs will load here -->
+      </div>
+    </section>
+    <section class="add-api">
+      <h2>Add New API</h2>
+      <form id="add-api-form">
+        <input type="text" id="api-name" placeholder="API Name" required>
+        <textarea id="api-description" placeholder="Description" required></textarea>
+        <input type="url" id="api-website" placeholder="Website URL" required>
+        <input type="email" id="user-email" placeholder="Your Email" required>
+        <button type="submit">Add API</button>
+      </form>
+    </section>
+    <section class="contact-us">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" id="user-name" placeholder="Your Name" required>
+        <input type="email" id="contact-email" placeholder="Your Email" required>
+        <textarea id="user-query" placeholder="Your Query" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <button id="developer-info">About Developer</button>
+    <div id="developer-details" class="hidden">
+      <p><strong>Developer:</strong> Lokesh V</p>
+      <p><strong>Email:</strong> lokeshv2403@gmail.com</p>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
