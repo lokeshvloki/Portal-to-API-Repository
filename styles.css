@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3e7dd;
+    color: #333333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #8b5e3c;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.theme-toggle button {
+    background-color: #fff;
+    color: #8b5e3c;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.theme-toggle button:hover {
+    background-color: #704627;
+    color: #fff;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #8b5e3c;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #704627;
+}
+
+#api-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.api-card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #8b5e3c;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #8b5e3c;
+    color: white;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+    background-color: #333333;
+    color: #f3e7dd;
+}
+
+body.dark-theme header {
+    background-color: #704627;
+}
+
+body.dark-theme .theme-toggle button {
+    background-color: #704627;
+    color: #fff;
+}
+
+body.dark-theme .api-card {
+    background-color: #444;
+    color: #f3e7dd;
+    border: 1px solid #704627;
+}
+
+body.dark-theme button {
+    background-color: #704627;
+}
+
+body.dark-theme button:hover {
+    background-color: #8b5e3c;
+}
